@@ -1,2 +1,2 @@
 # NomNomNow
-An online food ordering app using ReactJS
+Interactive UI of an online food ordering app using ReactJS
