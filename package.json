@@ -1,0 +1,30 @@
+{
+  "name": "nomnomnow",
+  "version": "1.0.0",
+  "description": "A Food Ordering Web App",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shanvid19/NomNomNow.git"
+  },
+  "keywords": [
+    "food"
+  ],
+  "author": "Shanvi Dixit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shanvid19/NomNomNow/issues"
+  },
+  "homepage": "https://github.com/shanvid19/NomNomNow#readme",
+  "devDependencies": {
+    "parcel": "^2.15.2"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}
