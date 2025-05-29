@@ -52,10 +52,17 @@ const Header = () => {
 const ResCard = () => {
   return (
     <div className="res-card">
-      <div className="res-img">
-        <img src="https://static.india.com/wp-content/uploads/2024/03/indian-cuisine_63a94498281e7.jpg?impolicy=Medium_Widthonly&w=350&h=263" alt="" />
+      <img
+        className="res-img"
+        src="https://static.india.com/wp-content/uploads/2024/03/indian-cuisine_63a94498281e7.jpg?impolicy=Medium_Widthonly&w=350&h=263"
+        alt=""
+      />
+      <div className="res-content">
+        <div className="res-name">Call me Chow</div>
+        <div className="res-cuisines">Chinese, Korean, Japanese</div>
+        <div className="res-rating">4.3/5</div>
+        <div className="res-cost">₹1500 for 2</div>
       </div>
-      <div className="res-name">Call me Chow</div>
     </div>
   );
 };
@@ -64,8 +71,12 @@ const Body = () => {
   return (
     <div className="body-section">
       <div className="search">
-           <input className="input-bar" type="text" placeholder="Search restaurant, dishes, cuisines, etc"/>
-           <button className="search-btn">Search</button>
+        <input
+          className="input-bar"
+          type="text"
+          placeholder="Search restaurant, dishes, cuisines, etc."
+        />
+        <button className="search-btn">Search</button>
       </div>
 
       <div className="res-card-cont">

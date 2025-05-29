@@ -29,6 +29,7 @@ body {
 .app-name {
   font-family: fantasy;
   font-size: 60px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .nav-items {
@@ -40,6 +41,11 @@ body {
   display: flex;
   gap: 5vw;
   font-weight: bold;
+}
+
+.nav-items ul li:hover{
+  cursor: pointer;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .body-section {
@@ -78,15 +84,14 @@ body {
 
 .search-btn:hover{
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .res-card-cont {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
-  gap: 4vw;
+  gap: 3vw;
 }
 
 .res-card {
@@ -95,11 +100,24 @@ body {
   border-radius: 3px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 10px;
+  border: 2px solid #d78b28cd;
 }
 
 .res-card:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   cursor: pointer;
+}
+
+.res-img{
+  width: 15vw;
+}
+
+.res-name{
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.res-content{
+  margin-top: 20px;
 }
