@@ -49,7 +49,7 @@ const Header = () => {
   );
 };
 
-const ResCard = () => {
+const ResCard = ({resName, resCui, resRate, resCost}) => {
   return (
     <div className="res-card">
       <img
@@ -58,10 +58,10 @@ const ResCard = () => {
         alt=""
       />
       <div className="res-content">
-        <div className="res-name">Call me Chow</div>
-        <div className="res-cuisines">Chinese, Korean, Japanese</div>
-        <div className="res-rating">4.3/5</div>
-        <div className="res-cost">₹1500 for 2</div>
+        <div className="resName">{resName}</div>
+        <div className="resCui">{resCui}</div>
+        <div className="resRate">{resRate}</div>
+        <div className="resCost">{resCost}</div>
       </div>
     </div>
   );
@@ -80,21 +80,96 @@ const Body = () => {
       </div>
 
       <div className="res-card-cont">
-        <ResCard />
-        <ResCard />
-        <ResCard />
-        <ResCard />
-        <ResCard />
-        <ResCard />
-        <ResCard />
-        <ResCard />
-        <ResCard />
-        <ResCard />
-        <ResCard />
-        <ResCard />
-        <ResCard />
-        <ResCard />
-        <ResCard />
+        <ResCard 
+          resName = "Call Me Chow"
+          resCui = "Japanese, Chinese, Thai, Korean"
+          resRate = "4.5/5.0"
+          resCost = "₹1500 for 2"
+        />
+        <ResCard 
+          resName = "KFC"
+          resCui = "American, Non-Veg"
+          resRate = "4.0/5.0"
+          resCost = "₹500 for 2"
+        />
+        <ResCard 
+          resName = "Persona"
+          resCui = "Continental, North Indian, South Indian"
+          resRate = "3.9/5.0"
+          resCost = "₹800 for 2"
+        />
+        <ResCard 
+          resName = "Call Me Chow"
+          resCui = "Japanese, Chinese, Thai, Korean"
+          resRate = "4.5/5.0"
+          resCost = "₹1500 for 2"
+        />
+        <ResCard 
+          resName = "0612 Soya Chaap"
+          resCui = "Punjabi"
+          resRate = "4.9/5.0"
+          resCost = "₹1000 for 2"
+        />
+        <ResCard 
+          resName = "Ice N' Spice"
+          resCui = "Indian"
+          resRate = "4.0/5.0"
+          resCost = "2000 for 2"
+        />
+        <ResCard 
+          resName = "Brunch Hut"
+          resCui = "Chinese"
+          resRate = "4.3/5.0"
+          resCost = "400 for 2"
+        />
+        <ResCard 
+          resName = "McDonalds"
+          resCui = "American, Fast Food"
+          resRate = "2.9/5.0"
+          resCost = "350 for 2"
+        />
+        <ResCard 
+          resName = "Burger King"
+          resCui = "American, Fast Food"
+          resRate = "4.6/5.0"
+          resCost = "490 for 2"
+        />
+        <ResCard 
+          resName = "Afraa"
+          resCui = "Continental"
+          resRate = "4.0/5.0"
+          resCost = "2500 for 2"
+        />
+        <ResCard 
+          resName = "Iron Hill"
+          resCui = "Chinese, Continental, Indian"
+          resRate = "4.3/5.0"
+          resCost = "1500 for 2"
+        />
+        <ResCard 
+          resName = "The Terrace"
+          resCui = "Buffet"
+          resRate = "4.5/5.0"
+          resCost = "800 for 1"
+        />
+        <ResCard 
+          resName = "Woodpecker"
+          resCui = "Bar, Cafe"
+          resRate = "3.9/5.0"
+          resCost = "1000 for 2"
+        />
+        <ResCard 
+          resName = "HoNS"
+          resCui = "Cafe"
+          resRate = "4.2/5.0"
+          resCost = "800 for 2"
+        />
+        <ResCard 
+          resName = "Social Hazratganj"
+          resCui = "Cafe, Continental"
+          resRate = "3.6/5.0"
+          resCost = "600 for 2"
+        />  
       </div>
     </div>
   );
