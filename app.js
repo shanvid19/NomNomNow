@@ -49,7 +49,7 @@ const Header = () => {
   );
 };
 
-
+//FETCHING DATA MANUALLY - HARD CODED DATA
 //resList is an array containing objects which contain information about the restaurant 
 const resList = [
                   {
@@ -1610,18 +1610,20 @@ const resList = [
 
 const ResCard = (props) => {
   const {resObj} = props;
+  const {cloudinaryImageId, name, avgRating, costForTwo, cuisines} = resObj?.info; //Destructuring props for making code developer friendly using optional chaining (?.)
+
   return (
     <div className="res-card">
       <img
         className="res-img"
-        src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_366/"+resObj.info.cloudinaryImageId}
+        src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_366/"+ cloudinaryImageId}
         alt=""
       />
-      <div className="resName">{resObj.info.name}</div>
+      <div className="resName">{name}</div>
       <div className="res-content">
-        <div className="resRate">★ {resObj.info.avgRating} / 5.0</div>
-        <div className="resCost">{resObj.info.costForTwo}</div>
-        <div className="resCui">{resObj.info.cuisines.join(", ")}</div>
+        <div className="resRate">★ {avgRating} / 5.0</div>
+        <div className="resCost">{costForTwo}</div>
+        <div className="resCui">{cuisines.join(", ")}</div>
       </div>
     </div>
   );
@@ -1642,7 +1644,7 @@ const Body = () => {
       <div className="res-card-cont">
         {resList.map(
           (restaurant) => 
-            <ResCard resObj = {restaurant}/>
+            <ResCard resObj = {restaurant} key = {restaurant.info.id}/>
         )}
       </div>
     </div>
