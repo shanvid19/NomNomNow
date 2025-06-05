@@ -4,95 +4,12 @@ const resList = [
                       "id": "789167",
                       "name": "Theobroma",
                       "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/4/9/61a18d1a-b04c-4097-a2ae-7e4f733d47c8_789167.jpg",
-                      "locality": "SECTOR- B",
-                      "areaName": "Aliganj",
                       "costForTwo": "₹400 for two",
                       "cuisines": [
                         "Bakery",
                         "Desserts"
                       ],
-                      "avgRating": 4.5,
-                      "parentId": "1040",
-                      "avgRatingString": "4.5",
-                      "totalRatingsString": "771",
-                      "sla": {
-                        "deliveryTime": 29,
-                        "lastMileTravel": 7.1,
-                        "serviceability": "SERVICEABLE",
-                        "slaString": "25-30 mins",
-                        "lastMileTravelString": "7.1 km",
-                        "iconType": "ICON_TYPE_EMPTY"
-                      },
-                      "availability": {
-                        "nextCloseTime": "2025-06-03 00:00:00",
-                        "opened": true
-                      },
-                      "badges": {
-                        "imageBadges": [
-                          {
-                            "imageId": "newg.png",
-                            "description": "Gourmet"
-                          }
-                        ]
-                      },
-                      "isOpen": true,
-                      "type": "F",
-                      "badgesV2": {
-                        "entityBadges": {
-                          "imageBased": {
-                            "badgeObject": [
-                              {
-                                "attributes": {
-                                  "description": "Gourmet",
-                                  "imageId": "newg.png"
-                                }
-                              }
-                            ]
-                          },
-                          "textBased": {
-
-                          },
-                          "textExtendedBadges": {
-
-                          }
-                        }
-                      },
-                      "aggregatedDiscountInfoV3": {
-                        "header": "₹200 OFF",
-                        "subHeader": "ABOVE ₹999",
-                        "discountTag": "FLAT DEAL"
-                      },
-                      "differentiatedUi": {
-                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                        "differentiatedUiMediaDetails": {
-                          "lottie": {
-
-                          },
-                          "video": {
-
-                          }
-                        }
-                      },
-                      "reviewsSummary": {
-
-                      },
-                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                      "restaurantOfferPresentationInfo": {
-
-                      },
-                      "externalRatings": {
-                        "aggregatedRating": {
-                          "rating": "--"
-                        }
-                      },
-                      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-                    },
-                    "analytics": {
-                      "context": "seo-data-3e57428f-0121-4ea2-ae84-56e6c81aad8f"
-                    },
-                    "cta": {
-                      "link": "https://www.swiggy.com/city/lucknow/theobroma-sector-b-aliganj-rest789167",
-                      "type": "WEBLINK"
+                      "avgRating": 2.5,
                     }
                   },
                   {
@@ -100,85 +17,12 @@ const resList = [
                       "id": "333396",
                       "name": "Burger King",
                       "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/3/24/6b6fe023-fd45-457d-b3dc-bebc81da9e9d_333396.jpg",
-                      "locality": "Sector E",
-                      "areaName": "Aliganj",
                       "costForTwo": "₹350 for two",
                       "cuisines": [
                         "Burgers",
                         "American"
                       ],
-                      "avgRating": 4.5,
-                      "parentId": "166",
-                      "avgRatingString": "4.5",
-                      "totalRatingsString": "31K+",
-                      "sla": {
-                        "deliveryTime": 24,
-                        "lastMileTravel": 4.6,
-                        "serviceability": "SERVICEABLE",
-                        "slaString": "20-25 mins",
-                        "lastMileTravelString": "4.6 km",
-                        "iconType": "ICON_TYPE_EMPTY"
-                      },
-                      "availability": {
-                        "nextCloseTime": "2025-06-03 05:00:00",
-                        "opened": true
-                      },
-                      "badges": {
-
-                      },
-                      "isOpen": true,
-                      "type": "F",
-                      "badgesV2": {
-                        "entityBadges": {
-                          "imageBased": {
-
-                          },
-                          "textBased": {
-
-                          },
-                          "textExtendedBadges": {
-
-                          }
-                        }
-                      },
-                      "aggregatedDiscountInfoV3": {
-                        "header": "60% OFF",
-                        "subHeader": "UPTO ₹120"
-                      },
-                      "differentiatedUi": {
-                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                        "differentiatedUiMediaDetails": {
-                          "lottie": {
-
-                          },
-                          "video": {
-
-                          }
-                        }
-                      },
-                      "reviewsSummary": {
-
-                      },
-                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                      "restaurantOfferPresentationInfo": {
-
-                      },
-                      "externalRatings": {
-                        "aggregatedRating": {
-                          "rating": "4.6",
-                          "ratingCount": "2.5K+"
-                        },
-                        "source": "GOOGLE",
-                        "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
-                      },
-                      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-                    },
-                    "analytics": {
-                      "context": "seo-data-3e57428f-0121-4ea2-ae84-56e6c81aad8f"
-                    },
-                    "cta": {
-                      "link": "https://www.swiggy.com/city/lucknow/burger-king-sector-e-aliganj-rest333396",
-                      "type": "WEBLINK"
+                      "avgRating": 3.5,
                     }
                   },
                   {
