@@ -1,7 +1,7 @@
 # NomNomNow
 Interactive UI of an online food ordering app using ReactJS
 
-# Structure of our food ordering app
+## Structure of our food ordering app
 
 1. Header
   - Logo : with symbol and name
