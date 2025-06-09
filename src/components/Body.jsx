@@ -1,9 +1,10 @@
 import ResCard from "./ResCard";
-import resList from "../utils/mockData";
+import Shimmer from "./Shimmer";
+
 import { useEffect, useState } from "react"; //NAMED IMPORT
 
 const Body = () => {
-  const [listOfRes, setListOfRes] = useState(resList);
+  const [listOfRes, setListOfRes] = useState([]);
 
   useEffect(() => {
     fetchData();
@@ -13,6 +14,13 @@ const Body = () => {
     const data = await fetch("https://www.swiggy.com/mapi/restaurants/list/v5?offset=0&is-seo-homepage-enabled=true&lat=26.942225&lng=80.9518745&carousel=true&third_party_vendor=1");
     const json = await data.json();
     console.log(json);
+    setListOfRes(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
+    //data.cards[4].card.card.gridElements.infoWithStyle.restaurants - PATH FOR TOP RATED RESTAURANTS
+    //
+  }
+
+  if(listOfRes.length === 0){
+    return <Shimmer />
   }
 
   return (
