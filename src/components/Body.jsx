@@ -6,6 +6,7 @@ import { useEffect, useState } from "react"; //NAMED IMPORT
 const Body = () => {
   const [listOfRes, setListOfRes] = useState([]);
 
+  /*
   useEffect(() => {
     fetchData();
   }, []);
@@ -18,20 +19,21 @@ const Body = () => {
     //data.cards[4].card.card.gridElements.infoWithStyle.restaurants - PATH FOR TOP RATED RESTAURANTS
     //
   }
+    */
 
-  if(listOfRes.length === 0){
+  if (listOfRes.length === 0) {
     return <Shimmer />
   }
 
-  return (
+  return (listOfRes === 0) ? <Shimmer /> : (
     <div className="body-section">
 
       <div className="topRated">
 
 
-        <button className="topRated-btn" onClick={()=>{
+        <button className="topRated-btn" onClick={() => {
           const filteredList = listOfRes.filter(
-            (res)=> res.info.avgRating > 4
+            (res) => res.info.avgRating > 4
           );
           setListOfRes(filteredList);
         }}>
@@ -51,8 +53,8 @@ const Body = () => {
 
       <div className="res-card-cont">
         {listOfRes.map(   //DONT FORGET TO CHANGE THE VARIABLE YOU ARE MAPPING OVER!!!!!!!!!!!!!!!!!!!!!
-          (restaurant) => 
-            <ResCard resObj = {restaurant} key = {restaurant.info.id}/>
+          (restaurant) =>
+            <ResCard resObj={restaurant} key={restaurant.info.id} />
         )}
       </div>
     </div>
