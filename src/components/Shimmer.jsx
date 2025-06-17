@@ -1,22 +1,22 @@
 const Shimmer = () => {
-    <div className="res-card-cont">
-        <div className="res-card"></div>
-        <div className="res-card"></div>
-        <div className="res-card"></div>
-        <div className="res-card"></div>
-        <div className="res-card"></div>
-        <div className="res-card"></div>
-        <div className="res-card"></div>
-        <div className="res-card"></div>
-        <div className="res-card"></div>
-        <div className="res-card"></div>
-        <div className="res-card"></div>
-        <div className="res-card"></div>
-        <div className="res-card"></div>
-        <div className="res-card"></div>
-        <div className="res-card"></div>
-        <div className="res-card"></div>
-        <div className="res-card"></div>
+    <div className="shimmer-cont">
+        <div className="shimmer-card"></div>
+        <div className="shimmer-card"></div>
+        <div className="shimmer-card"></div>
+        <div className="shimmer-card"></div>
+        <div className="shimmer-card"></div>
+        <div className="shimmer-card"></div>
+        <div className="shimmer-card"></div>
+        <div className="shimmer-card"></div>
+        <div className="shimmer-card"></div>
+        <div className="shimmer-card"></div>
+        <div className="shimmer-card"></div>
+        <div className="shimmer-card"></div>
+        <div className="shimmer-card"></div>
+        <div className="shimmer-card"></div>
+        <div className="shimmer-card"></div>
+        <div className="shimmer-card"></div>
+        <div className="shimmer-card"></div>
     </div>
 }
 

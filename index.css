@@ -33,7 +33,7 @@ body {
 }
 
 .nav-items {
-  padding: 0px 200px;
+  padding: 0px 190px;
 }
 
 .nav-items ul {
@@ -76,7 +76,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3vw;
+  gap: 10px;
 }
 
 .input-bar{
@@ -87,20 +87,27 @@ body {
     padding: 0 20px;
 }
 
-.search-btn{
-    height: 5vh;
-    width: 6vw;
-    border-radius: 300px;
-    border: 0px;
-    padding: 0px 20x;
-    background-color: black;
-    color: white;
-    font-weight: bold;
+.btn{
+  height: 5vh;
+  padding: 10px 20px;
+  border-radius: 300px;
+  border: 0px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
 }
 
-.search-btn:hover{
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+.btn:hover{
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+.filter{
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .res-card-cont {
@@ -148,4 +155,25 @@ body {
 .res-content{
   font-size: 12px;
   color: rgb(106, 106, 106);
+}
+
+.shimmer-cont{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  gap: 3vw;
+  padding-left: 28px;
+}
+
+.shimmer-card{
+  width: 15vw;
+  height: 40vh;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 2px solid gray;
+  background-color: gray;
+  border-radius: 10px;
 }
