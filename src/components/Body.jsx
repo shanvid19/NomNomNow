@@ -45,10 +45,10 @@ const Body = () => {
             <button 
               className="btn"
               onClick = {()=>{
-                const searchedRestList = listOfRes.filter(
+                const searchedList = listOfRes.filter(
                   (res) => res.info.name.toLowerCase().includes(searchText.toLowerCase())
                 )
-                setDisplayRes(searchedRestList);
+                setDisplayRes(searchedList);
               }}
             >Search</button>
           </div>
