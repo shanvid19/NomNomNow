@@ -5,6 +5,7 @@ import Body from "./components/Body";
 import {createBrowserRouter, RouterProvider} from "react-router";
 import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/ContactUs";
+import Error from "./components/Error";
 
 const AppLayout = () => {
   //React
@@ -19,7 +20,8 @@ const AppLayout = () => {
 const appRouter = createBrowserRouter([ //a list of various path-containing-objects
   {
     path: "/",
-    element: <AppLayout />
+    element: <AppLayout />,
+    errorElement: <Error />
   },
   {
     path: "/about",
