@@ -4,7 +4,7 @@ import Shimmer from "./Shimmer";
 import { useEffect, useState } from "react"; //NAMED IMPORT
 
 const Body = () => {
-  const [listOfRes, setListOfRes] = useState([]); //react state variable - to dynamically show data
+  const [listOfRes, setListOfRes] = useState(null); //react state variable - to dynamically show data
   const [displayRes, setDisplayRes] = useState([]); 
 
   //listOfRes stores the original value of all the 15 restaurants, while displayRest stores info of all the restaurants which we wish to display. It is necessary in order to avoid bug in case of search functionality.
@@ -25,6 +25,7 @@ const Body = () => {
     //data.cards[4].card.card.gridElements.infoWithStyle.restaurants - PATH FOR TOP RATED RESTAURANTS
   }
 
+  if(listOfRes === null) return <Shimmer />;
   console.log(listOfRes);
 
     return (
