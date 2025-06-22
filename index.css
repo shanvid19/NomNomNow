@@ -224,3 +224,26 @@ body {
 .prices{
   list-style: none;
 }
+
+/*About Us Page*/
+
+.aboutUs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contributor-data{
+  border: 3px solid white;
+  padding: 40px;
+  margin: 20px 40px;
+  background-color: white;
+  font-size: 14px;
+  border-radius: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
