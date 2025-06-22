@@ -1,7 +1,8 @@
 import ResCard from "./ResCard";
 import Shimmer from "./Shimmer";
-
+import { RESGRID_URL } from "../utils/constants";
 import { useEffect, useState } from "react"; //NAMED IMPORT
+import { Link } from "react-router";
 
 const Body = () => {
   const [listOfRes, setListOfRes] = useState(null); //react state variable - to dynamically show data
@@ -16,7 +17,7 @@ const Body = () => {
   }, []);
 
   const fetchData = async () => {
-    const data = await fetch("https://www.swiggy.com/mapi/restaurants/list/v5?offset=0&is-seo-homepage-enabled=true&lat=26.942225&lng=80.9518745&carousel=true&third_party_vendor=1");
+    const data = await fetch(RESGRID_URL);
 
     const json = await data.json();
     console.log(json);
@@ -25,15 +26,13 @@ const Body = () => {
     //data.cards[4].card.card.gridElements.infoWithStyle.restaurants - PATH FOR TOP RATED RESTAURANTS
   }
 
-  if(listOfRes === null) return <Shimmer />;
-  console.log(listOfRes);
+  return listOfRes === null ? <Shimmer /> : 
+  (
+    <div className="body-section">
 
-    return (
-      <div className="body-section">
+      <div className="filter">
 
-        <div className="filter">
-
-          <div className="search">
+        <div className="search">
             <input
               className="input-bar"
               type="text"
@@ -69,11 +68,11 @@ const Body = () => {
         <div className="res-card-cont">
           {displayRes.map(   //DONT FORGET TO CHANGE THE VARIABLE YOU ARE MAPPING OVER!!!!!!!!!!!!!!!!!!!!!
             (restaurant) =>
-              <ResCard resObj={restaurant} key={restaurant.info.id} />
+              <Link to={"/restaurant/" + restaurant.info.id} key={restaurant.info.id} ><ResCard resObj={restaurant}/></Link>
           )}
-        </div>
       </div>
-    );
+    </div>
+  );
   
 };
 

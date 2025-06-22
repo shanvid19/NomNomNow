@@ -178,3 +178,49 @@ body {
   background-color: rgba(128, 128, 128, 0.429);
   border-radius: 10px;
 }
+
+/*Individual Restaurant Pages */
+
+.res-name-designer{
+  font-family: fantasy;
+  letter-spacing: 3px;
+  font-weight: 500;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.menu-designer{
+  font-family: fantasy;
+  font-weight: lighter;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.res{
+  display: flex;
+  flex-direction: column;
+  padding: 20px 80px;
+  gap: 50px;
+}
+
+/*
+.resHead{
+  background-color: white;
+  padding: 20px 60px;
+  border-radius: 30px;
+  box-shadow: inset;
+}
+  */
+
+.resMenu{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.itemGrid ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+.prices{
+  list-style: none;
+}
