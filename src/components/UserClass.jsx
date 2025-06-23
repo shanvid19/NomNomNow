@@ -10,18 +10,40 @@ class UserClass extends React.Component {
             count : 0,
             count2 : 1,
         };
+
+        console.log(this.props.name + " constructor");
+    }
+
+    componentDidMount(){
+        console.log(this.props.name + " componentDidMount");
     }
 
     render() {
+        console.log(this.props.name + " render");
+
         const {name, location} = this.props;
 
-        const{count, count2} = this.state;
+        const{count, count2} = this.state; //destructuring
 
         return (
             <div className="contributor-data">
-                <h2 className="contri-name">Name: {name + " (Class)"}</h2>
-                <h4 className="contri-contact">Contact: shanvid.ug23.ch@nitp.ac.in</h4>
-                <h4 className="contri-location">Location: {location}</h4>
+                <div className="count-btn">
+                    <button onClick={() => {
+                        this.setState({
+                            count : this.state.count + 1,
+                            count2 : this.state.count - 1,
+                        })
+                        console.log(count + " " + count2);
+                    }}>
+                        Increase
+                    </button>
+                </div>
+
+                <h1 className="contri-name">Name: {name + " (Class)"}</h1>
+                <h2 className="contri-contact">Contact: shanvid.ug23.ch@nitp.ac.in</h2>
+                <h2 className="contri-location">Location: {location}</h2>
+
+                <h4>{this.state.count}</h4>
             </div>
         );
     }

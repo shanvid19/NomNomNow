@@ -11,6 +11,9 @@ const User = (props) =>{
             <h1 className="contri-name">Name: {name + " (Function)"}</h1>
             <h2 className="contri-contact">Contact: shanvid.ug23.ch@nitp.ac.in</h2>
             <h2 className="contri-location">Location: {location}</h2>
+
+            <h4>{count}</h4>
+            <h4>{count2}</h4>
         </div>
     );
 }
