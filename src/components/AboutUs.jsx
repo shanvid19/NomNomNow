@@ -6,9 +6,9 @@ const AboutUs = () => {
         <div className="aboutUs">
             <h1>Welcome to About Us Page!</h1>
             <br />
-            <User obj = {"Shanvi"}/> 
+            <User name = {"Shanvi"} location = "Lucknow, Uttar Pradesh, India"/> 
             <br />
-            <UserClass obj = {"Shanvi"}/>
+            <UserClass name = {"Shanvi"} location = "Lucknow, Uttar Pradesh, India"/>
         </div>
     )
 };
