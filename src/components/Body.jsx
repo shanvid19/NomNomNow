@@ -14,6 +14,8 @@ const Body = () => {
 
   useEffect(() => {
     fetchData();
+
+    return () => {}; //cleanup function - to clear content after unloading the component
   }, []);
 
   const fetchData = async () => {
