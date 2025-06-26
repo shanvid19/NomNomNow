@@ -3,6 +3,7 @@ import Shimmer from "./Shimmer";
 import { RESGRID_URL } from "../utils/constants";
 import { useEffect, useState } from "react"; //NAMED IMPORT
 import { Link } from "react-router";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Body = () => {
   const [listOfRes, setListOfRes] = useState(null); //react state variable - to dynamically show data
@@ -27,6 +28,11 @@ const Body = () => {
     setDisplayRes(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     //data.cards[4].card.card.gridElements.infoWithStyle.restaurants - PATH FOR TOP RATED RESTAURANTS
   }
+
+  const onlineStatus = useOnlineStatus();
+  if(!onlineStatus) return(
+    <h1>Hmm... looks like you are offline.</h1>
+  )
 
   return listOfRes === null ? <Shimmer /> : 
   (
