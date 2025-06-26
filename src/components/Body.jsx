@@ -8,14 +8,11 @@ import useOnlineStatus from "../utils/useOnlineStatus";
 const Body = () => {
   const [listOfRes, setListOfRes] = useState(null); //react state variable - to dynamically show data
   const [displayRes, setDisplayRes] = useState([]); 
-
   //listOfRes stores the original value of all the 15 restaurants, while displayRest stores info of all the restaurants which we wish to display. It is necessary in order to avoid bug in case of search functionality.
-
   const [searchText, setSearchText] = useState(""); //local react state variable to enable search functionality
 
   useEffect(() => {
     fetchData();
-
     return () => {}; //cleanup function - to clear content after unloading the component
   }, []);
 
