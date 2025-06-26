@@ -5,23 +5,19 @@ import {MENU_URL} from "../utils/constants"
 
 const RestaurantPage = () => {
     const [resInfo, setResInfo] = useState(null);
-    const [resContent, setResContent] = useState(null);
-    const [menu, setMenu] = useState(null);
 
     useEffect(() => {
         fetchInfo();
     }, []);
 
     const {resId} = useParams();
-    console.log(useParams());
+    //console.log(useParams());
 
     const fetchInfo = async () => {
         const info = await fetch(MENU_URL + resId); //+ "&catalog_qa=undefined&submitAction=ENTER" );
         const json = await info.json();
-        console.log(json);
+        //console.log(json);
         setResInfo(json?.data);
-        setResContent(json?.data?.cards[5]?.groupedCard?.cardGroupMap?.REGULAR);
-        setMenu(json?.data?.cards[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards[3]?.card?.card?.itemCards);
     }
 
     //destructuring data for neatness
@@ -38,8 +34,6 @@ const RestaurantPage = () => {
     } = resInfo?.cards[2]?.card?.card?.info;
 
     console.log(resInfo);
-    console.log(resContent);
-    console.log(menu);
 
     return (
         <div className="res">
@@ -54,10 +48,10 @@ const RestaurantPage = () => {
                 <div className="itemGrid">
                     <ul>
                     <div className="item">
-                    {menu.map(item => <li key={item.card.info.id}>{item.card.info.name}</li>)}
+                    {resInfo?.cards[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards[3]?.card?.card?.itemCards.map(item => <li key={item.card.info.id}>{item.card.info.name}</li>)}
                     </div>
                     <div className="prices">
-                    {menu.map((item, index) => <li key={index}>{item.card.info.price / 100}</li>)}
+                    {resInfo?.cards[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards[3]?.card?.card?.itemCards.map((item, index) => <li key={index}>{item.card.info.price / 100}</li>)}
                     </div>
                     </ul>
                 </div>
