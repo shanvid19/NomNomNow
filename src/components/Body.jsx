@@ -37,7 +37,7 @@ const Body = () => {
 
       <div className="filter">
 
-        <div className="search">
+        <div className="search flex">
             <input
               className="input-bar"
               type="text"

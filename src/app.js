@@ -12,7 +12,7 @@ import Shimmer from "./components/Shimmer";
 const AppLayout = () => {
   //React
   return (
-    <div className="app">
+    <div className="app bg-[#ffae42]">
       <Header />
       <Outlet />
     </div>

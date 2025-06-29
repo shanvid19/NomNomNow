@@ -8,36 +8,37 @@ const Header = () => {
   const onlineStatus = useOnlineStatus();
 
   return (
-    <div className="header">
-      <div className="logo-container">
+    <div className=" header flex justify-between items-center bg-white px-8 shadow-2xl">
+      <div className="logo-container flex items-center gap-4">
         <img
           src= {LOGO_URL}
           alt="NomNomNow"
           id="logo"
+          className="h-40"
         />
-        <div className="app-name">Nom Nom Now</div>
+        <div className="app-name font-mono font-extrabold text-5xl">Nom Nom Now</div>
       </div>
 
       <div className="nav-items">
-        <ul>
-          <li>
+        <ul className="flex gap-10">
+          <li className="px-1.5">
             {onlineStatus ? "🟢" : "🔴"}
           </li>
-          <li>
+          <li className="px-1.5 font-extrabold font-mono hover:text-shadow-lg">
             <Link to="/">Home</Link>
           </li>
-          <li>
+          <li className="px-1.5 font-extrabold font-mono hover:text-shadow-lg">
             <Link to="/about">About Us</Link>
           </li>
-          <li>
+          <li className="px-1.5 font-extrabold font-mono hover:text-shadow-lg">
             <Link to="/contactus">Contact Us</Link>
           </li>
-          <li>
+          <li className="px-1.5 font-extrabold font-mono hover:text-shadow-lg">
             <Link to="/Grocery">Grocery</Link>
           </li>
-          <li>Cart</li>
+          <li className="px-1.5 font-extrabold font-mono hover:text-shadow-lg">Cart</li>
 
-          <li> <button className="login-btn" onClick = {() => {
+          <li> <button className="login-btn px-1.5 font-extrabold font-mono hover:text-shadow-lg" onClick = {() => {
             (btnNameReact==="Login") ? setBtnNameReact("Logout") : setBtnNameReact("Login"); //Adding toggle functionality
           }}
           > {btnNameReact} </button> </li>
