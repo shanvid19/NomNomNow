@@ -68,7 +68,7 @@ const Body = () => {
 
         </div>
 
-        <div className="res-card-cont flex flex-wrap">
+        <div className="res-card-cont flex justify-center flex-wrap">
           {displayRes.map(   //DONT FORGET TO CHANGE THE VARIABLE YOU ARE MAPPING OVER!!!!!!!!!!!!!!!!!!!!!
             (restaurant) =>
               <Link to={"/restaurant/" + restaurant.info.id} key={restaurant.info.id} ><ResCard resObj={restaurant} /></Link>
